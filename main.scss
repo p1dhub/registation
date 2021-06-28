@@ -1,0 +1,73 @@
+html {
+    height: 100%;
+}
+
+body {
+    background: #FEAC5E;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #4BC0C8, #C779D0, #FEAC5E);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #4BC0C8, #C779D0, #FEAC5E); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-repeat: no-repeat;
+}
+
+.form-card {
+    background-color: #2b2a66;
+    width: 400px;
+    margin: 3rem auto;
+    padding: 1.75rem 2.75rem;
+    border-radius: 12px;
+    font-family: 'Noto Sans';
+    box-shadow: 2px 2px 6px -1px #242156;
+
+    .title {
+        font-size: 1.5rem;
+        text-align: center;
+        background-color: #242156;
+        color: white;
+        padding: 1rem;
+        margin: -1.75rem -1.75rem 1.75rem -1.75rem;
+        border-radius: 12px 12px 0 0 ;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+        border: none;
+        padding: 0.45rem 1rem;
+        margin-bottom: 0.75rem;
+        width: (400px-(2rem));
+        flex-grow: 1;
+        border-radius: 6px;
+        &::placeholder {
+            color:darkgray;
+        }
+    }
+
+    .field {
+        display: flex;
+    }
+    
+    .field-submit {
+        justify-content: flex-end;
+    }
+    .checkboxes {
+        color: lightgray;
+        margin-top: 1.25rem;
+        margin-bottom: 0.5rem;
+        label {
+            margin-left: 0.5rem;
+            margin-bottom: 1.25rem;
+        }
+    }
+
+    .btn-submit {
+        padding: 0.5rem 1.25rem;
+        font-size: 1.125rem;
+        font-weight: 700;
+        font-family: 'Noto Sans';
+        border: none;
+        border-radius: 10px;
+        color: white;
+        background-color: lime;
+        clear: right;
+    }
+}
